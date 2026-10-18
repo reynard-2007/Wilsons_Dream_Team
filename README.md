@@ -7,9 +7,9 @@ A static recruitment website for **[Company Name]**, an online retail platform e
 
 Built for the group project, industry allocation **G05: E-Commerce & Digital Retail Platform**.
 
-- **Live site:** https://[github-username].github.io/[repository-name]/
-- **Jira project:** [Jira project URL]
-- **GitHub repository:** [GitHub repository URL]
+- **Live site:** https://reynard-2007.github.io/Wilsons_Dream_Team/
+- **Jira project:** https://cos10026wilsondoan.atlassian.net/jira/software/projects/SCRUM/boards/1
+- **GitHub repository:** https://github.com/reynard-2007/Wilsons_Dream_Team.git
 
 ## Tech Stack
 
@@ -90,15 +90,14 @@ All pages pass validation with no errors.
 
 ## Team
 
-**Group:** [Group name]
-**Class:** [Day and time]
-
+**Group:** Wilson's dream team
+**Class:** Thurday, 7a.m-10a.m
 | Name | Student ID | Contribution |
 |------|------------|--------------|
-| Yuki | [ID] | [Pages / tasks] |
-| Khang | [ID] | [Pages / tasks] |
-| Hung | [ID] | [Pages / tasks] |
-| Anh | [ID] | [Pages / tasks] |
+| Yuki | 106394628 | Jobs.html |
+| Khang | 106391302 | Index.html |
+| Hung | 106726072 | Apply.html |
+| Anh | 106727091 | About.html |
 
 ## Deployment
 

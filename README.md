@@ -1,9 +1,9 @@
 
 #COS10026
 
-# [Company Name] Recruitment Website
+# DTShop Recruitment Website
 
-A static recruitment website for **[Company Name]**, an online retail platform expanding its technical and user experience teams. The site advertises job vacancies and lets candidates submit an application through a validated HTML5 form.
+A static recruitment website for **DTShop**, an online retail platform expanding its technical and user experience teams. The site advertises job vacancies and lets candidates submit an application through a validated HTML5 form.
 
 Built for the group project, industry allocation **G05: E-Commerce & Digital Retail Platform**.
 

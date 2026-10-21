@@ -58,6 +58,7 @@ header {
     align-items: center;
     padding: 10px 5%;
     border-bottom: 2px solid #111827;
+    
 }
 
 nav ul {
@@ -65,10 +66,12 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 nav li {
     margin-left: 25px;
+    
 }
 
 nav a {
@@ -144,7 +147,9 @@ main {
     padding: 12px 25px;
     margin-right: 10px;
     text-decoration: none;
+    border-radius: 12px;
     font-weight: bold;
+    text-align: center;
 }
 
 .button:hover {
@@ -156,6 +161,7 @@ main {
 .box {
     background-color: #111827;
     border: 2px solid #00f2fe;
+    border-radius: 12px;
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -238,3 +244,149 @@ footer li {
         margin-top: 20px;
     }
 }
+
+/*---------------------------------jobs---------------------------------- */
+
+
+.page-intro {
+    padding: 30px 0 10px;
+}
+
+.jump-links {
+    margin-top: 15px;
+}
+
+
+.jobs-layout {
+    margin-bottom: 30px;
+}
+
+.page-intro p {
+    font-size: 1.1rem;
+    max-width: 60ch;
+}
+
+aside.side-note {
+    float: right;
+    width: 25%;
+    margin: 0 0 20px 25px;
+    padding: 20px;
+    border: 2px solid #00f2fe;
+    border-radius: 12px;
+    background-color: #111827;
+    color: #ffffff;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+
+.jobs-content {
+    overflow: hidden;
+}
+
+/* One job card */
+.job {
+    background-color: #111827;
+    border: 2px solid #00f2fe;
+    border-radius: 12px;
+    border-left: 8px solid #00f2fe;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+.job h2 {
+    margin: 0;
+}
+
+.job h3 {
+    color: #ffffff;
+    border-bottom: 1px solid #00f2fe;
+    padding-bottom: 5px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ref {
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid #00f2fe;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+}
+
+
+.job-meta {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 20px;
+    background-color: #000000;
+    border: 1px solid #00f2fe;
+    padding: 12px 15px;
+}
+
+.job-meta dt {
+    color: #00f2fe;
+    font-weight: bold;
+}
+
+.job-meta dd {
+    margin: 0;
+}
+
+/* Essential and preferable requirements side by side */
+.job-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.job li,
+.box ol li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* Visible keyboard focus (accessibility) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #ffd700;
+    outline-offset: 2px;
+}
+
+/* Current page link in the menu */
+nav a[aria-current="page"] {
+    color: #00f2fe;
+    border-bottom: 2px solid #00f2fe;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Tablet and phone: aside drops above the jobs, full width */
+@media (max-width: 768px) {
+    aside.side-note {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .job-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .job-meta {
+        grid-template-columns: 1fr;
+    }
+}
+
+

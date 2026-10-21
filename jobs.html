@@ -1,51 +1,273 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="COS10026 Project Unit 1">
-    <meta name="keyword" content="Cos10026, Project 1">
-    <meta name="author" content="Team 1: COS10026">
-    <link rel="icon" type="image/x-icon" href="swin_logo.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Jobs</title>
+    <meta name="description" content="DTShop current vacancies: Front-End Web Developer and UX Designer roles.">
+    <meta name="keywords" content="DTShop, jobs, front-end developer, UX designer, COS10026, Project Part 1">
+    <meta name="author" content="Wilson's Dream Team">
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>DTShop - Jobs</title>
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="brand">
-                <img src="logo.svg" width="56" height="56" alt="DTSHOP logo">
-                <div>
-                    <p class="brand-name">DTSHOP</p>
-                    <p class="brand-slogan">Parts that power your build.</p>
-                </div>
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="DTShop logo - Digital Tech Components" width="200"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html" aria-current="page">Jobs</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h1>Current vacancies</h1>
+            <p>
+                DTShop is growing its web and user experience team. Two roles are open for 2026. Both are based in
+                Ho Chi Minh City with hybrid working.
+            </p>
+            <nav class="jump-links" aria-label="Jump to a job">
+                <a class="button" href="#F1">Front-End Web Developer</a>
+                <a class="button" href="#U1">UX Designer</a>
+                <a class="button" href="#B1">Back-End Developer</a>
+            </nav>
+        </section>
+        <br>
+        <div class="jobs-layout">
+
+            <aside class="side-note" aria-labelledby="eeo-title">
+                <h2 id="eeo-title">Inclusive employment</h2>
+                <p>DTShop encourages applications from Aboriginal and Torres Strait Islander peoples, people with
+                    disability, and people of all backgrounds.</p>
+                <p>We value the perspectives First Nations peoples bring to technology and design. If you need
+                    adjustments during recruitment, tell us and we will arrange them.</p>
+                <p><a href="mailto:careers@dtshop.vn">Email careers@dtshop.vn</a></p>
+            </aside>
+
+
+            <div class="jobs-content">
+
+                <article class="job" id='F1'>
+                    <header class="job-header">
+                        <h2 id="fe-title">Front-End Web Developer</h2>
+                    </header>
+
+                    <p>Build and improve the product listing pages, search and checkout screens that thousands of
+                        PC builders use every day.</p>
+
+                    <dl class="job-meta">
+                        <dt>Salary</dt>
+                        <dd>AUD $80,000-$95,000 per year</dd>
+                        <dt>Reports to</dt>
+                        <dd>Head of Digital Engineering</dd>
+                        <dt>Location</dt>
+                        <dd>Ho Chi Minh City, hybrid</dd>
+                    </dl>
+
+                    <section>
+                        <h3>Key responsibilities</h3>
+                        <ul>
+                            <li>Develop responsive product listing and product detail pages in HTML5, CSS3 and
+                                JavaScript.</li>
+                            <li>Turn UX designs into accessible, fast-loading interfaces.</li>
+                            <li>Improve page speed and Core Web Vitals scores across the store.</li>
+                            <li>Review code with teammates and fix defects found in testing.</li>
+                        </ul>
+                    </section>
+
+                    <section class="job-columns">
+                        <div>
+                            <h3> requirements</h3>
+                            <ul>
+                                <li>Strong HTML5 and CSS3, including Flexbox and Grid.</li>
+                                <li>Working knowledge of JavaScript.</li>
+                                <li>Understanding of WCAG accessibility standards.</li>
+                                <li>Experience using Git and GitHub.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Preferable requirements</h3>
+                            <ul>
+                                <li>Experience with an e-commerce platform.</li>
+                                <li>Familiarity with a front-end framework such as React.</li>
+                                <li>Basic knowledge of SEO and web analytics.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <p class="button"><a href="apply.html">Apply for Job</a></p>
+                </article>
+
+
+
+
+
+                <article class="job" id='U1'>
+                    <header class="job-header">
+                        <h2 id="ux-title">UX Designer</h2>
+                    </header>
+
+                    <p>Shape how customers find, compare and buy PC components, from first search to final
+                        checkout.</p>
+
+                    <dl class="job-meta">
+                        <dt>Salary</dt>
+                        <dd>AUD $75,000-$90,000 per year</dd>
+                        <dt>Reports to</dt>
+                        <dd>Head of Digital Experience</dd>
+                        <dt>Location</dt>
+                        <dd>Ho Chi Minh City, hybrid</dd>
+                    </dl>
+
+                    <section>
+                        <h3>Key responsibilities</h3>
+                        <ul>
+                            <li>Run user research and usability tests on shopping and checkout flows.</li>
+                            <li>Create wireframes, prototypes and design specifications for developers.</li>
+                            <li>Maintain the DTShop design system and component library.</li>
+                            <li>Work with developers to check designs are built as intended.</li>
+                        </ul>
+                    </section>
+
+                    <section class="job-columns">
+                        <div>
+                            <h3>Skills requirements</h3>
+                            <ul>
+                                <li>Portfolio showing user-centred design work.</li>
+                                <li>Proficiency in Figma or a similar design tool.</li>
+                                <li>Knowledge of accessible design and colour contrast.</li>
+                                <li>Clear communication with technical and non-technical colleagues.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Preferable requirements</h3>
+                            <ul>
+                                <li>Experience designing for online retail.</li>
+                                <li>Basic HTML and CSS knowledge.</li>
+                                <li>Experience running A/B tests.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <p class="button"><a href="apply.html">Apply for Job</a></p>
+                </article>   
+
+                <article class="job" id="B1">
+                    <header class="job-header">
+                        <h2 id="backend-title">Back-End Developer</h2>
+                    </header>
+                
+                    <p>Build the server-side systems behind DTShop, from product catalogue and search to orders and payments.</p>
+                
+                    <dl class="job-meta">
+                        <dt>Salary</dt>
+                        <dd>AUD $85,000-$100,000 per year</dd>
+                        <dt>Reports to</dt>
+                        <dd>Head of Digital Engineering</dd>
+                        <dt>Location</dt>
+                        <dd>Ho Chi Minh City, hybrid</dd>
+                    </dl>
+                
+                    <section>
+                        <h3>Key responsibilities</h3>
+                        <ul>
+                            <li>Design and maintain APIs for product listings, search, cart and checkout.</li>
+                            <li>Manage the product, customer and order databases, including query performance.</li>
+                            <li>Integrate payment, shipping and inventory services securely.</li>
+                            <li>Monitor system uptime, fix production issues and write automated tests.</li>
+                        </ul>
+                    </section>
+                
+                    <section class="job-columns">
+                        <div>
+                            <h3>Skills requirements</h3>
+                            <ul>
+                                <li>Experience with a server-side language such as Python, PHP, Node.js or Java.</li>
+                                <li>Solid SQL and relational database design (MySQL or PostgreSQL).</li>
+                                <li>Experience building and consuming REST APIs.</li>
+                                <li>Understanding of web security basics, including authentication and input validation.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Preferable requirements</h3>
+                            <ul>
+                                <li>Experience with an e-commerce platform or payment gateway.</li>
+                                <li>Familiarity with cloud hosting and Docker.</li>
+                                <li>Experience with caching tools such as Redis.</li>
+                            </ul>
+                        </div>
+                    </section>
+                
+                    <p class="button"><a href="apply.html">Apply for Job</a></p>
+                </article>
+
+
+                <section class="box">
+                    <h2 id="process-title">How we hire</h2>
+                    <ol>
+                        <li>Submit the online application form with the job reference number.</li>
+                        <li>We review applications within two weeks.</li>
+                        <li>Shortlisted applicants complete a short practical task.</li>
+                        <li>Final interview with the hiring manager and a team member.</li>
+                        <li>Successful applicants receive an offer by email.</li>
+                    </ol>
+                </section>
+
+                <section class="box" aria-labelledby="search-title">
+                    <h2 id="search-title">Search</h2>
+                    <form action="#" method="get">
+                        <label for="search">Search jobs or products:</label>
+                        <input type="search" id="search" name="search" placeholder="e.g. Front-end Developer">
+                        <button type="submit">Search</button>
+                    </form>
+                </section>
+
             </div>
-            <nav class="main-nav" aria-label="Main">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+
+            <section>
+                <h2>DTShop</h2>
+                <p>Digital Tech Components<br>Professional Technology Store</p>
+            </section>
+
+            <section>
+                <h2>Quick Links</h2>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="jobs.html" aria-current="page">Jobs</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="apply.html">Apply</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <article id="main" class="container clearfix">
-        <h1>Current vacancies</h1>
+            </section>
 
-    </article>
-    <footer class="site-footer">
-        <div class="footer-inner">
-                <h2 style="font-size: 1.1rem; color: #fff;">Project links</h2>
+            <section>
+                <h2>Project Links</h2>
                 <ul>
-                    <li><a href="[Jira URL]" alt="Jira project">Jira project</a></li>
-                    <li><a href="https://github.com/reynard-2007/COS10026.git" alt="GitHub repository">GitHub repository</a></li>
-                    <li><a href="mailto:info@companyname.com" alt="Email info@companyname.com">dtshop@companyname.com</a></li>
+                    <li><a href="https://cos10026wilsondoan.atlassian.net/jira/software/projects/SCRUM/boards/1"
+                            title="Jira project">Jira project</a></li>
+                    <li><a href="https://github.com/reynard-2007/COS10026" title="GitHub repository">GitHub
+                            repository</a></li>
+                    <li><a href="https://reynard-2007.github.io/Wilsons_Dream_Team/"
+                            title="Live website on GitHub Pages">Live website</a></li>
+                    <li><a href="mailto:careers@dtshop.vn" title="Email DTShop">Email DTShop: careers@dtshop.vn</a></li>
                 </ul>
-            <p class="copyright">&copy; 2026 ByteBay. A student project for educational purposes.</p>
+            </section>
+
         </div>
+        <p class="copyright">&copy; 2026 DTShop</p>
     </footer>
+
 </body>
 
 </html>

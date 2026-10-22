@@ -41,6 +41,8 @@ img {
 }
 
 header {
+    background-color: #121c33;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;

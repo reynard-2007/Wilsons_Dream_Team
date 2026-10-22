@@ -387,6 +387,7 @@ Description: style for apply.html */
 
  #Job_apply{
     background-color: white;
+    color:#000000;
     max-width: 550px;
     margin: auto;
     padding: 25px; 

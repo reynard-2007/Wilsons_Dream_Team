@@ -1,303 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Meet the team behind DTSHOP, our PC shop website project.">
-    <meta name="keywords" content="DTSHOP, PC shop, gaming computers, computer hardware">
-    <meta name="author" content="DTSHOP Team">
-
-    <title>About Us - DTSHOP</title>
-
-    <!-- Link to external CSS file -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="description" content="Demonstrates some basic HTML content elements and CSS" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="A Lecturer"  />
+  <title>HTML Structure and Content Elements + CSS</title>
+  <link rel="stylesheet" href="./styles./styles.css">
 </head>
-
+<!-- This is a comment. Indenting child elements makes the markup much more readable -->
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="header">
-            <a href="index.html"><img src="images/logo.png" alt="DTShop logo - Digital Tech Components" width="200" ></a>
-        </div>
-
-        <nav>
+   <header>
+     <h1>HTML 5 Content Elements with some Simple CSS</h1>
+     <nav>
+         <a href="#headings">Heading and Paragraphs</a> 
+         <a href="#sc">Special Characters</a> 
+         <a href="#lists">Lists</a> 
+         <a href="#tables">Tables</a>
+         <a href="#images">Images</a>
+         <a href="#hyperlinks">Hyperlinks</a>
+      </nav>
+      <hr />
+   </header>
+   
+   <article>   
+      <aside>
+         <p>HTML page without CCS styling looks a bit boring!!</p>
+      </aside>
+      <h2 id="headings">Headings and Paragraphs </h2>
+      <p>Headings and paragraphs are BLOCK elements</p>
+      <h3 id="heading-title">Headings</h3>
+      <p>There are 6 levels of heading. Headings are logical marked. Do not skip levels. If you want to change the size of a heading, don't change its level - change the CSS.</p>
+      <h3>Paragraphs</h3>
+      <p>Paragraphs contain the body text of a web page. You cannot put another block element inside a paragraph.</p>
+      
+      <h2 id="sc">Special Characters</h2>
+      <p>While HTML supports many named special characters like <span class="special">&#174; (#174)</span>, XML only supports 5 namely: <span class="special">&quot; &apos; &amp; &lt;</span>  and <span class="special">&gt;</span>.  So to keep your HTML compliant you need to use numbers for all the others.</p>
+      
+         
+      
+      <!-- Comments can be useful to indicate various sections of markup-->
+      <!--Lists-->
+      <h2 id="list">Lists</h2>
+      <p>There are three types of lists: Unordered and Ordered lists, and Definition Lists</p>
+      <h3>Unordered List</h3>
+	  <ul>
+         <li>First bullet point</li>
+         <li>Second bullet point</li>
+         <li>Third bullet point</li>
+      </ul>
+      <h3>Ordered List</h3>
+      <ol>
+         <li>First item</li>
+         <li>Second item</li>
+         <li>Third item</li>
+      </ol>
+	  <h3>Definition List</h3>
+	  <dl>
+		<dt>First term (or name)</dt>
+			<dd>First description (or definition, or value)</dd>
+		<dt>Second term (or name)</dt>
+			<dd>second description (or definition, or value)</dd>
+      </dl> 
+      <p>Lists can also be nested inside each other</p>
+      <ol>
+         <li>First item</li>
+         <li>Second item
             <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply</a></li>
-                <li><a href="about.html">About Us</a></li>
+               <li>First sub-item</li>
+               <li>Second sub-item</li>
+               <li>Third sub-item</li>
             </ul>
-        </nav>
-    </header>
+         </li>
+         <li>Third item</li>
+      </ol>		
 
-    <!-- Navigation -->
-    
+      <h2 id="tables">Tables</h2>
+      <table>
+<caption>Table of Monthly Savings</caption>
+         <thead>
+            <tr>
+            <!-- the scope attribute assists non-visual user agents -->
+            <!-- rowspan and colspan allow multiple cells to be merged -->
+              <th rowspan="2" scope="col">Month</th>
+              <th colspan="3" scope="col">Savings</th>
+            </tr>
+            <tr>
+              <th scope="col">Salary</th>
+              <th scope="col">Interest</th>
+              <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <th class="month" scope="row">Jan</th>
+           <td>$60</td>
+           <td>$40</td>
+           <td>$100</td>
+         </tr>
+         <tr>
+           <th class="month" scope="row">Feb</th>
+           <td>$40</td>
+           <td>$40</td>
+           <td>$80</td>
+         </tr>
+        </tbody>
+        <tfoot>
+         <tr>
+            <th colspan="3" scope="row"> Grand Total</th>
+            <td>$180</td>
+         </tr>
+        </tfoot>
+		</table>
+      
+      <h2 id="hyperlinks">Hyperlinks</h2>
+      <p><a href="https://swinburne.instructure.com" target = blank title="This takes you to Canvas"> This is a link to an external site Canvas</a></p>
+      <p>This is a link to the <a href="#list">List Section </a> of this Web page</p>
+      <p>This is a link using <a href="mailto:someone@swin.edu.au"> email</a> rather than an http protocol</p> 
+	  
+      <h2 id="images">Images</h2>
+      <p>This thumbnail image is used as a hyperlink to a larger version of the image</p>
+      <a href="images/mycat.jpg">  <img src="images/mycat_small.jpg" alt="Photo of my cat" title="Filesize 222kb " /></a>
 
-    <main>
-
-        <!-- 1. Group Name and Class Schedule -->
-        <section>
-            <h2>Our Group Information</h2>
-
-            <ul class="group-list">
-                <li>
-                    Group Name: DTSHOP
-
-                    <ul>
-                        <li>Unit: COS10026 - Web Technology</li>
-                        <li>Canvas Group: HCM_ThursdayMorning_01</li>
-
-                        <li>Dao Gia Khang
-                            <ul>
-                                <li>Monday: 7:00-11:00, 13:00-16:00</li>
-                                <li>Wednesday: 10:00-12:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                                <li>Saturday: 10:00-12:00</li>
-                            </ul>
-                        </li>
-
-                        <li>Huynh Phan Yuki
-                            <ul>
-                                <li>Monday: 7:00-11:00, 13:00-16:00</li>
-                                <li>Wednesday: 10:00-12:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                                <li>Saturday: 10:00-12:00</li>
-                            </ul>
-                        </li>
-
-                        <li>Nguyen Dinh Anh
-                            <ul>
-                                <li>Tuesday: 7:00-11:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                            </ul>
-                        </li>
-
-                        <li>Dao Ba Hung
-                            <ul>
-                                <li>Tuesday: 7:00-11:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-
-        <!-- 2. Member Contributions and Quotes -->
-        <section>
-            <h2>Meet Our Team</h2>
-
-            <dl class="member-list">
-
-                <dt>
-                    Dao Gia Khang
-                    <span class="student-id">106391302</span>
-                </dt>
-
-                <dd>
-                    <strong>Role:</strong> Team Leader.
-                </dd>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Responsible for validation, accessibility and final testing,
-                    and coordinating the final submission.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Có công mài sắt, có ngày nên kim."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Hard work and persistence lead to success."
-                </dd>
-
-
-                <dt>
-                    Huynh Phan Yuki
-                    <span class="student-id">106394628</span>
-                </dt>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Manages the Jira project board, tasks and sprint planning.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Học đi đôi với hành."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Learning goes hand in hand with practice."
-                </dd>
-
-
-                <dt>
-                    Nguyen Dinh Anh
-                    <span class="student-id">106727091</span>
-                </dt>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Responsible for the Aboriginal and Torres Strait Islander
-                    element of the project.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Thất bại là mẹ thành công."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Failure is the mother of success."
-                </dd>
-
-
-                <dt>
-                    Dao Ba Hung
-                    <span class="student-id">106726072</span>
-                </dt>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Communicates with the tutor on behalf of the group.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Kiến tha lâu cũng đầy tổ."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Small efforts add up over time."
-                </dd>
-
-            </dl>
-        </section>
-
-
-        <!-- 3. Group Photo -->
-        <section>
-            <h2>Our Group Photo</h2>
-
-            <figure class="group-photo">
-
-                <!-- Add your group photo here when it is available.
-                     Make sure the image is smaller than 300 KB. -->
-
-                <figcaption>
-                    The four members of DTSHOP working together
-                    on our PC shop website project.
-                </figcaption>
-
-            </figure>
-        </section>
-
-
-        <!-- 4. Fun Facts Table -->
-        <section>
-            <h2>Fun Facts About Our Team</h2>
-
-            <table class="fun-facts">
-
-                <caption>DTSHOP Team Fun Facts</caption>
-
-                <thead>
-                    <tr>
-                        <th>Member</th>
-                        <th>Dream Job</th>
-                        <th>Favourite PC Component</th>
-                        <th>Coding Snack</th>
-                        <th>Hometown</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Dao Gia Khang</td>
-                        <td>IT Project Manager</td>
-                        <td>Graphics Card</td>
-                        <td>Bubble Tea</td>
-                        <td>Vietnam</td>
-                    </tr>
-
-                    <tr>
-                        <td>Huynh Phan Yuki</td>
-                        <td>Software Developer</td>
-                        <td>Processor</td>
-                        <td>Chocolate</td>
-                        <td>Vietnam</td>
-                    </tr>
-
-                    <tr>
-                        <td>Nguyen Dinh Anh</td>
-                        <td>Computer Technician</td>
-                        <td>Gaming Monitor</td>
-                        <td>Chips</td>
-                        <td>Vietnam</td>
-                    </tr>
-
-                    <tr>
-                        <td>Dao Ba Hung</td>
-                        <td>Data Analyst</td>
-                        <td>Mechanical Keyboard</td>
-                        <td>Coffee</td>
-                        <td>Vietnam</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-columns">
-
-            <section>
-                <h2>DTShop</h2>
-                <p>Digital Tech Components<br>Professional Technology Store</p>
-            </section>
-
-            <section>
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="apply.html">Apply</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Project Links</h2>
-                <ul>
-                    <li><a href="https://cos10026wilsondoan.atlassian.net/jira/software/projects/SCRUM/boards/1" title="Jira project">Jira project</a></li>
-                    <li><a href="https://github.com/reynard-2007/COS10026" title="GitHub repository">GitHub repository</a></li>
-                    <li><a href="https://reynard-2007.github.io/Wilsons_Dream_Team/" title="Live website on GitHub Pages">Live website</a></li>
-                    <li><a href="mailto:careers@dtshop.vn" title="Email DTShop">Email DTShop: careers@dtshop.vn</a></li>
-                </ul>
-            </section>
-
-        </div>
-        <p class="copyright">&copy; 2026 DTShop</p>
-    </footer>
-    <p style="text-align: center;">
-        Thank you for visiting DTSHOP!
-    </p>
-
+      
+      <hr />
+   </article>
+	<footer>
+		<p>Lab04 - Task 3</p>
+	</footer>
 </body>
+
 </html>

@@ -1,270 +1,176 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Meet the team behind DTSHOP, our PC shop website project.">
-    <meta name="keywords" content="DTSHOP, PC shop, gaming computers, computer hardware">
-    <meta name="author" content="DTSHOP Team">
-
-    <title>About Us - DTSHOP</title>
-
-    <!-- Link to external CSS file -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="./dinhanh_styles.css">
 </head>
 
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="header">
-            <a href="index.html"><img src="images/logo.png" alt="DTShop logo - Digital Tech Components" width="200" ></a>
-        </div>
-
+<body id="body_apply">
+ <header>
+        <a href="index.html"><img src="images/logo.png" alt="DTShop logo - Digital Tech Components" width="200" ></a>
         <nav>
             <ul>
-                <li><a href="index.html"> Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="jobs.html">Jobs</a></li>
                 <li><a href="apply.html">Apply</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
+<h1 id="h1_apply">Job Application</h1>
 
-    <!-- Navigation -->
+<form id="Job_apply" 
+      method="post" 
+      action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <fieldset>
+
+    <!-- Job Reference Number -->
+    <label for="jobref">Job Reference Number:</label>
+    <select id="jobref" name="Jobref">
+       <option value=""></option>
+       <option value="FE001">FE001</option>
+       <option value="BE001">BE001</option>
+       <option value="FS001">FS001</option>
+    </select>
+
+    <br/>
+    <fieldset>
+       <legend>General information</legend>
+
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname"
+           pattern="[A-Za-z]"
+           required=required>
+    <br/>
+
+    <!-- NickName -->
+    <label for="nickname">NickName:</label>
+    <input type="text" id="nickname" name="nickname"
+           maxlength="20"
+           pattern="[A-Za-z0-9]{1,20}"
+           required=required>
+    <br/>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="text" id="dob" name="Date of Birth"
+           placeholder="dd/mm/yyyy"
+           pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"
+           required=required>
+    <br/>
+
+    <!-- Gender -->
+     <fieldset>
+        <legend>Gender:</legend>
+          <label> <input type="radio" name="gender" value="Male" required=required>Male</label>
+          <label> <input type="radio" name="gender" value="Female"> Female </label>
+     </fieldset>
+
+    <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required=required>
+        <br/>
+
+    <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone"
+           pattern="[0-9]{8,12}"
+           required=required>
+    </fieldset>
+
+    <fieldset>
+       <legend>Home address</legend>
+    <!-- Street Address -->
+    <label for="address">Street Address:</label>
+    <input type="text" id="address" name="Street address"
+           maxlength="40" required=required>
+    <br/>
+
+    <!-- Ward -->
+    <label for="ward">Ward:</label>
+    <input type="text" id="ward" name="Ward"
+           maxlength="40" required=required>
+    <br/>
+
+    <!-- province/city -->
+    <label for="p/c">Province/City: </label>
+       <select id="p/c" name="province/city" required=required>
+              <option value=""></option>
+              <option value="An Giang">An Giang</option>
+              <option value="Bac Ninh">Bắc Ninh</option>
+              <option value="Ca Mau">Cà Mau</option>
+              <option value="Can Tho">Cần Thơ</option>
+              <option value="Cao Bang">Cao Bằng</option>
+              <option value="Da Nang">Đà Nẵng</option>
+              <option value="Dak Lak">Đắk Lắk</option>
+              <option value="Dien Bien">Điện Biên</option>
+              <option value="Dong Nai">Đồng Nai</option>
+              <option value="Dong Thap">Đồng Tháp</option>
+              <option value="Gia Lai">Gia Lai</option>
+              <option value="Ha Noi">Hà Nội</option>
+              <option value="Ha Tinh">Hà Tĩnh</option>
+              <option value="Hai Phong">Hải Phòng</option>
+              <option value="Ho Chi Minh">Hồ Chí Minh</option>
+              <option value="Hue">Huế</option>
+              <option value="Hung Yen">Hưng Yên</option>
+              <option value="Khanh Hoa">Khánh Hòa</option>
+              <option value="Lai Chau">Lai Châu</option>
+              <option value="Lam Dong">Lâm Đồng</option>
+              <option value="Lang Son">Lạng Sơn</option>
+              <option value="Lao Cai">Lào Cai</option>
+              <option value="Nghe An">Nghệ An</option>
+              <option value="Ninh Binh">Ninh Bình</option>
+              <option value="Phu Tho">Phú Thọ</option>
+              <option value="Quang Ngai">Quảng Ngãi</option>
+              <option value="Quang Ninh">Quảng Ninh</option>
+              <option value="Quang Tri">Quảng Trị</option>
+              <option value="Son La">Sơn La</option>
+              <option value="Tay Ninh">Tây Ninh</option>
+              <option value="Thai Nguyen">Thái Nguyên</option>
+              <option value="Thanh Hoa">Thanh Hóa</option>
+              <option value="Tuyen Quang">Tuyên Quang</option>
+              <option value="Vinh Long">Vĩnh Long</option>
+       </select>
+    </fieldset>
+
+    <!-- Postcode -->
+    <a href="https://mabuuchinh.vn/">Find your postcode here</a> <br/>
+    <label for="postcode">Postcode:</label>
+    <input type="text" id="postcode" name="postcode"
+           pattern="[0-9]{5}"
+           maxlength="5"
+           required=required>
+    <br/>
     
+    <!-- Skill List -->
+    <fieldset>
+    <legend>Skill List</legend>
+        <input type="checkbox" name="skills[]" value="HTML"> HTML
+        <input type="checkbox" name="skills[]" value="CSS"> CSS
+        <input type="checkbox" name="skills[]" value="JavaScript"> JavaScript
+        <input type="checkbox" name="skills[]" value="React"> React
+        <input type="checkbox" name="skills[]" value="PHP"> PHP
+        <input type="checkbox" name="skills[]" value="Node.js"> Node.js
+        <input type="checkbox" name="skills[]" value="SQL"> SQL
+        <input type="checkbox" name="skills[]" value="Git"> Git
+    </fieldset>
 
-    <main>
+    <!-- Other Skills -->
+    <label for="otherskills">Other Skills:</label> <br/>
+    <textarea id="otherskills" name="otherskills"
+              rows="4" cols="40"></textarea>
+    <br/>
 
-        <!-- 1. Group Name and Class Schedule -->
-        <section>
-            <h2>Our Group Information</h2>
-
-            <ul class="group-list">
-                <li>
-                    Group Name: DTSHOP
-
-                    <ul>
-                        <li>Unit: COS10026 - Web Technology</li>
-                        <li>Canvas Group: HCM_ThursdayMorning_01</li>
-
-                        <li>Dao Gia Khang
-                            <ul>
-                                <li>Monday: 7:00-11:00, 13:00-16:00</li>
-                                <li>Wednesday: 10:00-12:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                                <li>Saturday: 10:00-12:00</li>
-                            </ul>
-                        </li>
-
-                        <li>Huynh Phan Yuki
-                            <ul>
-                                <li>Monday: 7:00-11:00, 13:00-16:00</li>
-                                <li>Wednesday: 10:00-12:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                                <li>Saturday: 10:00-12:00</li>
-                            </ul>
-                        </li>
-
-                        <li>Nguyen Dinh Anh
-                            <ul>
-                                <li>Tuesday: 7:00-11:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                            </ul>
-                        </li>
-
-                        <li>Dao Ba Hung
-                            <ul>
-                                <li>Tuesday: 7:00-11:00</li>
-                                <li>Thursday: 7:00-10:00</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-
-        <!-- 2. Member Contributions and Quotes -->
-        <section>
-            <h2>Meet Our Team</h2>
-
-            <dl class="member-list">
-
-                <dt>
-                    Dao Gia Khang
-                    <span class="student-id">106391302</span>
-                </dt>
-
-                <dd>
-                    <strong>Role:</strong> Team Leader.
-                </dd>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Responsible for validation, accessibility and final testing,
-                    and coordinating the final submission.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Có công mài sắt, có ngày nên kim."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Hard work and persistence lead to success."
-                </dd>
-
-
-                <dt>
-                    Huynh Phan Yuki
-                    <span class="student-id">106394628</span>
-                </dt>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Manages the Jira project board, tasks and sprint planning.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Học đi đôi với hành."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Learning goes hand in hand with practice."
-                </dd>
-
-
-                <dt>
-                    Nguyen Dinh Anh
-                    <span class="student-id">106727091</span>
-                </dt>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Responsible for the Aboriginal and Torres Strait Islander
-                    element of the project.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Thất bại là mẹ thành công."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Failure is the mother of success."
-                </dd>
-
-
-                <dt>
-                    Dao Ba Hung
-                    <span class="student-id">106726072</span>
-                </dt>
-
-                <dd>
-                    <strong>Contribution:</strong>
-                    Communicates with the tutor on behalf of the group.
-                </dd>
-
-                <dd>
-                    <strong>Vietnamese Quote:</strong>
-                    "Kiến tha lâu cũng đầy tổ."
-                </dd>
-
-                <dd>
-                    <strong>English Translation:</strong>
-                    "Small efforts add up over time."
-                </dd>
-
-            </dl>
-        </section>
-
-
-        <!-- 3. Group Photo -->
-        <section>
-            <h2>Our Group Photo</h2>
-
-            <figure class="group-photo">
-
-                <!-- Add your group photo here when it is available.
-                     Make sure the image is smaller than 300 KB. -->
-
-                <figcaption>
-                    The four members of DTSHOP working together
-                    on our PC shop website project.
-                </figcaption>
-
-            </figure>
-        </section>
-
-
-        <!-- 4. Fun Facts Table -->
-        <section>
-            <h2>Fun Facts About Our Team</h2>
-
-            <table class="fun-facts">
-
-                <caption>DTSHOP Team Fun Facts</caption>
-
-                <thead>
-                    <tr>
-                        <th>Member</th>
-                        <th>Dream Job</th>
-                        <th>Favourite PC Component</th>
-                        <th>Coding Snack</th>
-                        <th>Hometown</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Dao Gia Khang</td>
-                        <td>IT Project Manager</td>
-                        <td>Graphics Card</td>
-                        <td>Bubble Tea</td>
-                        <td>Vietnam</td>
-                    </tr>
-
-                    <tr>
-                        <td>Huynh Phan Yuki</td>
-                        <td>Software Developer</td>
-                        <td>Processor</td>
-                        <td>Chocolate</td>
-                        <td>Vietnam</td>
-                    </tr>
-
-                    <tr>
-                        <td>Nguyen Dinh Anh</td>
-                        <td>Computer Technician</td>
-                        <td>Gaming Monitor</td>
-                        <td>Chips</td>
-                        <td>Vietnam</td>
-                    </tr>
-
-                    <tr>
-                        <td>Dao Ba Hung</td>
-                        <td>Data Analyst</td>
-                        <td>Mechanical Keyboard</td>
-                        <td>Coffee</td>
-                        <td>Vietnam</td>
-                    </tr>
-                </tbody>
-
-            </table>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
+    <!-- Submit and Reset -->
+    <input type="submit" value="Apply"/>
+    <input type="reset" value="Reset"/>
+    </fieldset>
+</form>
+<footer>
         <div class="footer-columns">
 
             <section>
@@ -295,9 +201,5 @@
         </div>
         <p class="copyright">&copy; 2026 DTShop</p>
     </footer>
-    <p style="text-align: center;">
-        Thank you for visiting DTSHOP!
-    </p>
-
 </body>
 </html>

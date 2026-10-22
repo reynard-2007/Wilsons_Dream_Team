@@ -1,18 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body>
+<body id="body_apply">
+ <header>
+        <a href="index.html"><img src="images/logo.png" alt="DTShop logo - Digital Tech Components" width="200" ></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+<h1 id="h1_apply">Job Application</h1>
 
-<h1>Job Application</h1>
-
-<form id="Job application" 
+<form id="Job_apply" 
       method="post" 
       action="https://mercury.swin.edu.au/it000000/formtest.php">
     <fieldset>
@@ -54,10 +63,11 @@
     <br/>
 
     <!-- Gender -->
-        Gender:
+     <fieldset>
+        <legend>Gender:</legend>
           <label> <input type="radio" name="gender" value="Male" required=required>Male</label>
           <label> <input type="radio" name="gender" value="Female"> Female </label>
-     <br/>
+     </fieldset>
 
     <!-- Email -->
         <label for="email">Email:</label>
@@ -159,5 +169,36 @@
     <input type="reset" value="Reset"/>
     </fieldset>
 </form>
+<footer>
+        <div class="footer-columns">
+
+            <section>
+                <h2>DTShop</h2>
+                <p>Digital Tech Components<br>Professional Technology Store</p>
+            </section>
+
+            <section>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Project Links</h2>
+                <ul>
+                    <li><a href="https://cos10026wilsondoan.atlassian.net/jira/software/projects/SCRUM/boards/1" title="Jira project">Jira project</a></li>
+                    <li><a href="https://github.com/reynard-2007/COS10026" title="GitHub repository">GitHub repository</a></li>
+                    <li><a href="https://reynard-2007.github.io/Wilsons_Dream_Team/" title="Live website on GitHub Pages">Live website</a></li>
+                    <li><a href="mailto:careers@dtshop.vn" title="Email DTShop">Email DTShop: careers@dtshop.vn</a></li>
+                </ul>
+            </section>
+
+        </div>
+        <p class="copyright">&copy; 2026 DTShop</p>
+    </footer>
 </body>
 </html>

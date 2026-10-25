@@ -67,6 +67,7 @@ nav li {
 nav a {
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -140,6 +141,7 @@ main {
     border-radius: 999px;
     font-weight: bold;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .button:hover {

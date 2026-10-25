@@ -36,6 +36,7 @@
     </select>
 
     <br/>
+    <div class="left-section">
     <fieldset>
        <legend>General information</legend>
 
@@ -80,7 +81,10 @@
            pattern="[0-9]{8,12}"
            required=required>
     </fieldset>
+    <img src="./images/logo.png" width="130" height="150"/>
+    </div>
 
+    <div class="right-section">
     <fieldset>
        <legend>Home address</legend>
     <!-- Street Address -->
@@ -137,7 +141,8 @@
     </fieldset>
 
     <!-- Postcode -->
-    <a href="https://mabuuchinh.vn/">Find your postcode here</a> <br/>
+    
+    <a id="link_pos" href="https://mabuuchinh.vn/">Find your postcode here</a> <br/>
     <label for="postcode">Postcode:</label>
     <input type="text" id="postcode" name="postcode"
            pattern="[0-9]{5}"
@@ -162,11 +167,12 @@
     <label for="otherskills">Other Skills:</label> <br/>
     <textarea id="otherskills" name="otherskills"
               rows="4" cols="40"></textarea>
+    </div>
     <br/>
 
     <!-- Submit and Reset -->
-    <input type="submit" value="Apply"/>
-    <input type="reset" value="Reset"/>
+    <input class="form-buttons" type="submit" value="Apply"/>
+    <input class="form-buttons" type="reset" value="Reset"/>
     </fieldset>
 </form>
 <footer>

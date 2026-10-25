@@ -449,15 +449,16 @@ Description: style for apply.html */
  #Job_apply{
     background-color: white;
     color:#000000;
-    max-width: 550px;
+    max-width: 1000px;
     margin: auto;
     padding: 25px; 
-    border: 1px solid #ccc;
+    border: 5px solid #00D9E6;
     border-radius: 12px;
 }
 
 #h1_apply {
     text-align: center;
+    color: Cyan;
 }
 
 input, select, textarea {
@@ -479,6 +480,36 @@ fieldset {
 label {
     display: inline-block;
     margin: 5px 15px 5px 5px;
+}
+
+#link_pos {
+    color: blue;
+}
+
+.left-section {
+    float: left;
+    width: 48%;
+}
+
+.right-section {
+    float: right;
+    width: 48%;
+}
+
+.form-buttons {
+    clear: both;
+    padding-top: 20px;
+
+}
+
+input[type="submit"] {
+    background-color: #00D9E6;
+    color: #08202B;
+}
+
+input[type="reset"] {
+    background-color: #E5E7EB;
+    color: #374151;
 }
 /*---------------------------------about---------------------------------- */
 

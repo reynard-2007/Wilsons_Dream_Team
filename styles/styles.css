@@ -235,6 +235,16 @@ footer li {
     .right-box {
         margin-top: 20px;
     }
+
+image {
+    float: right;
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
 }
 
 /*---------------------------------jobs---------------------------------- */

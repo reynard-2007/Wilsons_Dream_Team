@@ -163,7 +163,7 @@ button[type="submit"]:hover {
 .box {
     background-color: #111827;
     border: 2px solid #00f2fe;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -255,7 +255,9 @@ table tbody tr:hover td {
 .box:hover {
     border-color: #00f2fe;
     box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+    transform: translateY(-6px);
 }
+
 
 .tags li:hover {
     transform: translateY(-3px);
@@ -463,6 +465,8 @@ aside.side-note {
     margin-bottom: 6px;
     line-height: 1.5;
 }
+
+
 
 /* Visible keyboard focus (accessibility) */
 a:focus-visible,

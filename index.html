@@ -115,14 +115,20 @@
             </table>
         </section>
 
-        <section class="box">
-            <h2>Search</h2>
-            <form action="#" method="get">
-                <label for="search">Search jobs:</label>
-                <input type="search" id="search" name="search" placeholder="e.g. Front-end Developer">
-                <button type="submit">Search</button>
-            </form>
-        </section>
+    <section class="box">
+        <h2>Search</h2>
+        <form action="jobs.html" method="get">
+            <label for="job-select">Search jobs:</label>
+            <select id="job-select" name="job" class="search-select">
+                <option value="" disabled selected>Click to select a job</option>
+                <option value="#F1">Front-End Web Developer</option>
+                <option value="#U1">UX Designer</option>
+                <option value="#B1">Back-End Developer</option>
+            </select>
+
+            <button type="submit" style="margin-top: 10px;">Search</button>
+        </form>
+    </section>
 
     </main>
 

@@ -13,6 +13,8 @@ description: index.html, jobs.html, apply.html, about.html
 
 */
 /*---------------------------------index+about---------------------------------- */
+/* setup*/
+
 body {
     background-color: #000000;
     color: #ffffff;
@@ -21,14 +23,13 @@ body {
     padding: 0;
 }
 
-
 h1 {
     font-size: 48px;
     margin: 10px 0;
 }
 
 h2 {
-    color: #00f2fe;
+    color: #00f2fe; 
 }
 
 a {
@@ -40,6 +41,13 @@ img {
     height: auto;
 }
 
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*header */
+
 header {
     background-color: #121c33;
     color: #ffffff;
@@ -48,7 +56,6 @@ header {
     align-items: center;
     padding: 10px 5%;
     border-bottom: 2px solid #111827;
-    
 }
 
 nav ul {
@@ -56,12 +63,10 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
 }
 
 nav li {
     margin-left: 25px;
-    
 }
 
 nav a {
@@ -74,12 +79,12 @@ nav a:hover {
     color: #00f2fe;
 }
 
-
-main {
-    width: 90%;
-    margin: 0 auto;
+nav a[aria-current="page"] {
+    color: #00f2fe;
+    border-bottom: 2px solid #00f2fe;
 }
 
+/*page */
 
 .top-section {
     display: flex;
@@ -89,25 +94,6 @@ main {
 
 .intro-text {
     width: 58%;
-}
-
-.right-box {
-    width: 34%;
-    background-color: #111827;
-    border: 2px solid #00f2fe;
-    padding: 20px;
-}
-
-.right-box ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.right-box li {
-    background-color: #000000;
-    border: 1px solid #00f2fe;
-    padding: 10px;
-    margin-bottom: 10px;
 }
 
 .hiring {
@@ -129,27 +115,51 @@ main {
     padding: 8px 15px;
     margin-bottom: 8px;
 }
+.right-box {
+    width: 34%;
+    background-color: #111827;
+    border: 2px solid #00f2fe;
+    padding: 20px;
+    border-radius: 8px;
+}
 
+.right-box ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-.button {
+.right-box li {
+    background-color: #000000;
+    border: 1px solid #00f2fe;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/*box,button*/
+.button, 
+button[type="submit"] {
     display: inline-block;
     background-color: #111827;
     border: 2px solid #00f2fe;
+    color: #ffffff;
     padding: 12px 25px;
     margin-right: 10px;
     text-decoration: none;
-    border-radius: 999px;
+    border-radius: 12px;
     font-weight: bold;
     text-align: center;
-    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.button:hover {
+.button:hover, 
+button[type="submit"]:hover {
     background-color: #00f2fe;
     color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 242, 254, 0.4);
 }
-
-
 .box {
     background-color: #111827;
     border: 2px solid #00f2fe;
@@ -157,6 +167,38 @@ main {
     padding: 20px;
     margin-bottom: 30px;
 }
+
+.search-select {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    background-color: #111827;
+    color: #ffffff;
+    border: 2px solid #00f2fe;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-select:focus {
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+.search-select option {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 10px;
+}
+
+input, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+/* table*/
 
 table {
     border-collapse: collapse;
@@ -170,24 +212,64 @@ caption {
 
 th, td {
     border: 1px solid #ffffff;
-    padding: 8px;
+    padding: 10px 12px;
     text-align: left;
 }
 
 th {
     background-color: #000000;
+    color: #00f2fe;
 }
 
+/* animation*/
 
-input, button {
-    padding: 8px;
-    margin: 5px;
+.right-box li,
+table tbody tr,
+.box,
+.tags li,
+.photo,
+.job {
+    transition: all 0.3s ease;
+}
+.right-box li:hover {
+    transform: translateX(8px);
+    background-color: #121c33;
+    border-color: #00f2fe;
+    box-shadow: -4px 0 12px rgba(0, 242, 254, 0.4);
+}
+.photo:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.5));
 }
 
+table tbody tr:hover {
+    background-color: rgba(0, 242, 254, 0.15);
+    cursor: pointer;
+}
+
+table tbody tr:hover td {
+    color: #00f2fe;
+    border-color: #00f2fe;
+}
+
+.box:hover {
+    border-color: #00f2fe;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+}
+
+.tags li:hover {
+    transform: translateY(-3px);
+    background-color: #1a263d;
+    color: #00f2fe;
+    box-shadow: 0 4px 8px rgba(0, 242, 254, 0.2);
+}
+
+/*footer*/
 
 footer {
     padding: 20px 5%;
     background-color: #121c33;
+    border-top: 2px solid #111827;
 }
 
 .footer-columns {
@@ -212,39 +294,6 @@ footer li {
     text-align: center;
     border-top: 1px solid #ffffff;
     padding-top: 15px;
-}
-
-
-@media (max-width: 768px) {
-    header, .hero, .footer-columns {
-        display: block;
-    }
-
-    nav ul {
-        margin-top: 10px;
-    }
-
-    nav li {
-        margin: 0 15px 0 0;
-    }
-
-    .intro-text, .right-box, .footer-columns section {
-        width: 100%;
-    }
-
-    .right-box {
-        margin-top: 20px;
-    }
-
-image {
-    float: right;
-    width: 300px;
-    height: auto;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-
 }
 
 /*---------------------------------jobs---------------------------------- */

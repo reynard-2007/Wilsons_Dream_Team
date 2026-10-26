@@ -312,7 +312,7 @@ aside.side-note {
     font-size: 0.72rem;
     font-weight: 700;
     color: #000000;
-    background: var(--jobs-cyan);
+    background: cyan;
     border-radius: 999px;
 }
 

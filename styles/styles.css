@@ -141,12 +141,12 @@ nav a[aria-current="page"] {
 button[type="submit"] {
     display: inline-block;
     background-color: #111827;
-    border: 2px solid #00f2fe;
+    border: 2px solid #7adadf;
     color: #ffffff;
     padding: 12px 25px;
     margin-right: 10px;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 999px;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
@@ -159,11 +159,12 @@ button[type="submit"]:hover {
     color: #000000;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 242, 254, 0.4);
+
 }
 .box {
     background-color: #111827;
     border: 2px solid #00f2fe;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -255,7 +256,9 @@ table tbody tr:hover td {
 .box:hover {
     border-color: #00f2fe;
     box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+    transform: translateY(-6px);
 }
+
 
 .tags li:hover {
     transform: translateY(-3px);
@@ -463,6 +466,50 @@ aside.side-note {
     margin-bottom: 6px;
     line-height: 1.5;
 }
+
+/* ---------- Hiring process ---------- */
+.box #process-title {
+    text-transform:uppercase;
+    font-size: 200%;
+}
+
+.hire {
+    max-width: none;
+}
+
+.hire-intro {
+    color: #c9d3ea;
+}
+
+.steps {
+    margin: 0 0 20px;
+    padding-left: 1.5rem;
+}
+
+.steps li {
+    margin-bottom: 14px;
+    padding-left: 6px;
+    line-height: 1.6;
+}
+
+.steps li::marker {
+    color: #00f2fe;
+    font-weight: 700;
+}
+
+.steps h3 {
+    margin: 0 0 2px;
+    padding: 0;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.steps p {
+    margin: 0;
+    color: #c9d3ea;
+}
+
+
 
 /* Visible keyboard focus (accessibility) */
 a:focus-visible,

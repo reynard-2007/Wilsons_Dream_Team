@@ -58,6 +58,11 @@ header {
     border-bottom: 2px solid #111827;
 }
 
+header img {
+    width: 320px;
+    height: 100px;
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -594,20 +599,23 @@ label {
     color: blue;
 }
 
+.form-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .left-section {
-    float: left;
     width: 48%;
 }
 
 .right-section {
-    float: right;
     width: 48%;
 }
 
 .form-buttons {
-    clear: both;
-    padding-top: 20px;
-
+    margin-top: 20px;
+    padding: 10px;
 }
 
 input[type="submit"] {

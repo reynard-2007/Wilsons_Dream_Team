@@ -96,8 +96,8 @@ All pages pass validation with no errors.
 |------|------------|--------------|
 | Yuki | 106394628 | Jobs.html |
 | Khang | 106391302 | Index.html |
-| Hung | 106726072 | Apply.html |
-| Anh | 106727091 | About.html |
+| Hung | 106726072 | About.html |
+| Anh | 106727091 | Apply.html |
 
 ## Deployment
 

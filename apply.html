@@ -36,137 +36,140 @@
     </select>
 
     <br/>
-    <div class="left-section">
-    <fieldset>
-       <legend>General information</legend>
+    <div class="form-layout"> 
+        <div class="left-section">
+        <fieldset>
+        <legend>General information</legend>
 
-    <!-- Full Name -->
-    <label for="fullname">Full Name:</label>
-    <input type="text" id="fullname" name="fullname"
-           pattern="[A-Za-z]"
-           required=required>
-    <br/>
-
-    <!-- NickName -->
-    <label for="nickname">NickName:</label>
-    <input type="text" id="nickname" name="nickname"
-           maxlength="20"
-           pattern="[A-Za-z0-9]{1,20}"
-           required=required>
-    <br/>
-
-    <!-- Date of Birth -->
-    <label for="dob">Date of Birth:</label>
-    <input type="text" id="dob" name="Date of Birth"
-           placeholder="dd/mm/yyyy"
-           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
-           required=required>
-    <br/>
-
-    <!-- Gender -->
-     <fieldset>
-        <legend>Gender:</legend>
-          <label> <input type="radio" name="gender" value="Male" required=required>Male</label>
-          <label> <input type="radio" name="gender" value="Female"> Female </label>
-     </fieldset>
-
-    <!-- Email -->
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required=required>
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"
+            pattern="[A-Za-z]"
+            required=required>
         <br/>
 
-    <!-- Phone Number -->
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phone"
-           pattern="[0-9]{8,12}"
-           required=required>
-    </fieldset>
-    <img src="./images/logo-icon.png" width="100" height="120"/>
-    </div>
+        <!-- NickName -->
+        <label for="nickname">NickName:</label>
+        <input type="text" id="nickname" name="nickname"
+            maxlength="20"
+            pattern="[A-Za-z0-9]{1,20}"
+            required=required>
+        <br/>
 
-    <div class="right-section">
-    <fieldset>
-       <legend>Home address</legend>
-    <!-- Street Address -->
-    <label for="address">Street Address:</label>
-    <input type="text" id="address" name="Street address"
-           maxlength="40" required=required>
-    <br/>
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="Date of Birth"
+            placeholder="dd/mm/yyyy"
+            pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+            required=required>
+        <br/>
 
-    <!-- Ward -->
-    <label for="ward">Ward:</label>
-    <input type="text" id="ward" name="Ward"
-           maxlength="40" required=required>
-    <br/>
+        <!-- Gender -->
+        <fieldset>
+            <legend>Gender:</legend>
+            <label> <input type="radio" name="gender" value="Male" required=required>Male</label>
+            <label> <input type="radio" name="gender" value="Female"> Female </label>
+        </fieldset>
 
-    <!-- province/city -->
-    <label for="p/c">Province/City: </label>
-       <select id="p/c" name="province/city" required=required>
-              <option value=""></option>
-              <option value="An Giang">An Giang</option>
-              <option value="Bac Ninh">Bắc Ninh</option>
-              <option value="Ca Mau">Cà Mau</option>
-              <option value="Can Tho">Cần Thơ</option>
-              <option value="Cao Bang">Cao Bằng</option>
-              <option value="Da Nang">Đà Nẵng</option>
-              <option value="Dak Lak">Đắk Lắk</option>
-              <option value="Dien Bien">Điện Biên</option>
-              <option value="Dong Nai">Đồng Nai</option>
-              <option value="Dong Thap">Đồng Tháp</option>
-              <option value="Gia Lai">Gia Lai</option>
-              <option value="Ha Noi">Hà Nội</option>
-              <option value="Ha Tinh">Hà Tĩnh</option>
-              <option value="Hai Phong">Hải Phòng</option>
-              <option value="Ho Chi Minh">Hồ Chí Minh</option>
-              <option value="Hue">Huế</option>
-              <option value="Hung Yen">Hưng Yên</option>
-              <option value="Khanh Hoa">Khánh Hòa</option>
-              <option value="Lai Chau">Lai Châu</option>
-              <option value="Lam Dong">Lâm Đồng</option>
-              <option value="Lang Son">Lạng Sơn</option>
-              <option value="Lao Cai">Lào Cai</option>
-              <option value="Nghe An">Nghệ An</option>
-              <option value="Ninh Binh">Ninh Bình</option>
-              <option value="Phu Tho">Phú Thọ</option>
-              <option value="Quang Ngai">Quảng Ngãi</option>
-              <option value="Quang Ninh">Quảng Ninh</option>
-              <option value="Quang Tri">Quảng Trị</option>
-              <option value="Son La">Sơn La</option>
-              <option value="Tay Ninh">Tây Ninh</option>
-              <option value="Thai Nguyen">Thái Nguyên</option>
-              <option value="Thanh Hoa">Thanh Hóa</option>
-              <option value="Tuyen Quang">Tuyên Quang</option>
-              <option value="Vinh Long">Vĩnh Long</option>
-       </select>
-    </fieldset>
+        <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required=required>
+            <br/>
 
-    <!-- Postcode -->
-    
-    <a id="link_pos" href="https://mabuuchinh.vn/">Find your postcode here</a> <br/>
-    <label for="postcode">Postcode:</label>
-    <input type="text" id="postcode" name="postcode"
-           pattern="[0-9]{5}"
-           maxlength="5"
-           required=required>
-    <br/>
-    
-    <!-- Skill List -->
-    <fieldset>
-    <legend>Skill List</legend>
-        <input type="checkbox" name="skills[]" value="HTML"> HTML
-        <input type="checkbox" name="skills[]" value="CSS"> CSS
-        <input type="checkbox" name="skills[]" value="JavaScript"> JavaScript
-        <input type="checkbox" name="skills[]" value="React"> React
-        <input type="checkbox" name="skills[]" value="PHP"> PHP
-        <input type="checkbox" name="skills[]" value="Node.js"> Node.js
-        <input type="checkbox" name="skills[]" value="SQL"> SQL
-        <input type="checkbox" name="skills[]" value="Git"> Git
-    </fieldset>
+        <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone"
+            pattern="[0-9]{8,12}"
+            required=required>
+        </fieldset>
+        <!-- logo  -->
+        <img src="./images/logo-icon.png" alt="logo" width="70" height="70"/>
+        </div>
 
-    <!-- Other Skills -->
-    <label for="otherskills">Other Skills:</label> <br/>
-    <textarea id="otherskills" name="otherskills"
-              rows="4" cols="40"></textarea>
+        <div class="right-section">
+        <fieldset>
+        <legend>Home address</legend>
+        <!-- Street Address -->
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="Street address"
+            maxlength="40" required=required>
+        <br/>
+
+        <!-- Ward -->
+        <label for="ward">Ward:</label>
+        <input type="text" id="ward" name="Ward"
+            maxlength="40" required=required>
+        <br/>
+
+        <!-- province/city -->
+        <label for="p/c">Province/City: </label>
+        <select id="p/c" name="province/city" required=required>
+                <option value=""></option>
+                <option value="An Giang">An Giang</option>
+                <option value="Bac Ninh">Bắc Ninh</option>
+                <option value="Ca Mau">Cà Mau</option>
+                <option value="Can Tho">Cần Thơ</option>
+                <option value="Cao Bang">Cao Bằng</option>
+                <option value="Da Nang">Đà Nẵng</option>
+                <option value="Dak Lak">Đắk Lắk</option>
+                <option value="Dien Bien">Điện Biên</option>
+                <option value="Dong Nai">Đồng Nai</option>
+                <option value="Dong Thap">Đồng Tháp</option>
+                <option value="Gia Lai">Gia Lai</option>
+                <option value="Ha Noi">Hà Nội</option>
+                <option value="Ha Tinh">Hà Tĩnh</option>
+                <option value="Hai Phong">Hải Phòng</option>
+                <option value="Ho Chi Minh">Hồ Chí Minh</option>
+                <option value="Hue">Huế</option>
+                <option value="Hung Yen">Hưng Yên</option>
+                <option value="Khanh Hoa">Khánh Hòa</option>
+                <option value="Lai Chau">Lai Châu</option>
+                <option value="Lam Dong">Lâm Đồng</option>
+                <option value="Lang Son">Lạng Sơn</option>
+                <option value="Lao Cai">Lào Cai</option>
+                <option value="Nghe An">Nghệ An</option>
+                <option value="Ninh Binh">Ninh Bình</option>
+                <option value="Phu Tho">Phú Thọ</option>
+                <option value="Quang Ngai">Quảng Ngãi</option>
+                <option value="Quang Ninh">Quảng Ninh</option>
+                <option value="Quang Tri">Quảng Trị</option>
+                <option value="Son La">Sơn La</option>
+                <option value="Tay Ninh">Tây Ninh</option>
+                <option value="Thai Nguyen">Thái Nguyên</option>
+                <option value="Thanh Hoa">Thanh Hóa</option>
+                <option value="Tuyen Quang">Tuyên Quang</option>
+                <option value="Vinh Long">Vĩnh Long</option>
+        </select>
+        </fieldset>
+
+        <!-- Postcode -->
+        
+        <a id="link_pos" href="https://mabuuchinh.vn/">Find your postcode here</a> <br/>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode"
+            pattern="[0-9]{5}"
+            maxlength="5"
+            required=required>
+        <br/>
+        
+        <!-- Skill List -->
+        <fieldset>
+        <legend>Skill List</legend>
+            <input type="checkbox" name="skills[]" value="HTML"> HTML
+            <input type="checkbox" name="skills[]" value="CSS"> CSS
+            <input type="checkbox" name="skills[]" value="JavaScript"> JavaScript
+            <input type="checkbox" name="skills[]" value="React"> React
+            <input type="checkbox" name="skills[]" value="PHP"> PHP
+            <input type="checkbox" name="skills[]" value="Node.js"> Node.js
+            <input type="checkbox" name="skills[]" value="SQL"> SQL
+            <input type="checkbox" name="skills[]" value="Git"> Git
+        </fieldset>
+
+        <!-- Other Skills -->
+        <label for="otherskills">Other Skills:</label> <br/>
+        <textarea id="otherskills" name="otherskills"
+                rows="4" cols="40"></textarea>
+        </div>
     </div>
     <br/>
 

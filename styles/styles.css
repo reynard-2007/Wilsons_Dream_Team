@@ -7,7 +7,7 @@ author: Wilson's Dream Team
 
 created: 18/10/2026
 
-last modified: 22/10/2026
+last modified: 29/10/2026
 
 description: index.html, jobs.html, apply.html, about.html
 
@@ -302,6 +302,32 @@ footer li {
     text-align: center;
     border-top: 1px solid #ffffff;
     padding-top: 15px;
+}
+/*photo fun facts of about*/
+.team-photo {
+    width: 60px;      
+    height: 60px;      
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 2px solid #00f2fe; 
+    display: block;
+    margin: 0 auto;  
+}
+table td:first-child,
+table th:first-child {
+    width: 80px;
+    max-width: 80px;
+}
+
+table td, table th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 8px;
+}
+
+.box table {
+    width: 100%;
+    table-layout: fixed;
 }
 
 /*---------------------------------jobs---------------------------------- */

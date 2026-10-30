@@ -557,25 +557,57 @@ nav a[aria-current="page"] {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    .job:hover,
+    .box:hover,
+    .button:hover,
+    .tags li:hover,
+    .right-box li:hover,
+    .photo:hover {
+        transform: none;
     }
 }
 
-/* Tablet and phone: aside drops above the jobs, full width */
 @media (max-width: 768px) {
-    aside.side-note {
-        float: none;
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header img {
+        width: 200px;
+        height: auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 5px 12px;
+    }
+
+    .top-section,
+    .form-layout,
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .intro-text,
+    .right-box,
+    .left-section,
+    .right-section,
+    .footer-columns section {
         width: 100%;
-        margin: 0 0 20px 0;
-    }
-
-    .job-columns {
-        grid-template-columns: 1fr;
-    }
-
-    .job-meta {
-        grid-template-columns: 1fr;
     }
 }
 
